@@ -13,17 +13,19 @@ main .container{
     height: 400px;
     background-color: beige;
     border: 1px solid black;
+    box-shadow: 10px 10px 20px black;
 }
 main .container .upperPart{
     width: 100%;
     height: 50px;
     background-color: blue;
-    border-bottom: 5px solid black;
+    border-bottom: 1px solid black;
 }
 main .container .upperPart h1{
     margin: 0 auto;
     width: fit-content;
     font-size: 40px;
+    /* color:white */
 }
 main .container .lowerPart{
     width: 100%;
@@ -33,4 +35,33 @@ main .container .lowerPart{
 }
 main .container .lowerPart p{
     font-size: 15px;
+}
+@keyframes example {
+    0%   {box-shadow: 10px 10px 20px black;}
+    10%  {box-shadow: 11px 11px 20px rgb(63.75, 0, 0);}
+    20%  {box-shadow: 12px 12px 20px rgb(127.5, 0, 0);}
+    30%  {box-shadow: 13px 13px 20px rgb(127.5, 0, 0);}
+    40%  {box-shadow: 14px 14px 20px rgb(191.25, 0, 0);}
+    50%  {box-shadow: 15px 15px 20px red;}
+    60%  {box-shadow: 14px 14px 20px rgb(191.25, 0, 0);}
+    70%  {box-shadow: 13px 13px 20px rgb(127.5, 0, 0);}
+    80%  {box-shadow: 12px 12px 20px rgb(127.5, 0, 0);}
+    90%  {box-shadow: 11px 11px 20px rgb(63.75, 0, 0);}
+    100% {box-shadow: 10px 10px 20px black;}
+}
+main .container:hover{
+    animation:example 4s;
+}
+section{
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+    position:absolute;
+    display:none;
+    top : 10%;
+    left: 20%;
+    margin: 0 auto;
+}
+section button{
+    
 }

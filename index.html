@@ -7,17 +7,41 @@
     <title>buenas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <main>
+<body id="body">
+    <main id="principalContect">
         <div class="container">
             <div class="upperPart">
-                <h1>blog</h1>
+                <h1 >blog</h1>
             </div>
             <div class="lowerPart">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae blanditiis, laudantium voluptatum atque itaque, quasi eum, tempora mollitia sed deleniti adipisci quas eligendi laboriosam dignissimos error aspernatur odio placeat autem.</p>
             </div>
+            <button onclick="funcionAhora()">clickeame</button>
         </div>
     </main>
-    
+    <section  id="cuerpo" > 
+        <button onclick="normalidad()">volver a la normalidad</button>
+        <div><p>holas</p></div>
+    </section>
+<script>
+    function funcionAhora(){
+        var cuerpo = document.getElementById('body');
+        cuerpo.style.backgroundColor = "black";
+        var mainContent = document.getElementById('principalContect');
+        mainContent.style.opacity = "0.3";
+        var principal = document.getElementById('cuerpo');
+        principal.style.display = "block";
+}
+    function normalidad(){
+        var cuerpo = document.getElementById('body');
+        cuerpo.style.backgroundColor = "white";
+        var mainContent = document.getElementById('principalContect');
+        mainContent.style.opacity = "1";
+        var principal = document.getElementById('cuerpo');
+        principal.style.display = "none";
+    }
+
+</script>
+<script src="/javaScript.js"></script>
 </body>
 </html>
