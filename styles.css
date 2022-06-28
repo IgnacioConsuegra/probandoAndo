@@ -1,0 +1,36 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+main .container{
+    margin: 0 auto;
+    width: fit-content;
+    height: 400px;
+    background-color: beige;
+    border: 1px solid black;
+}
+main .container .upperPart{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    border-bottom: 5px solid black;
+}
+main .container .upperPart h1{
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 40px;
+}
+main .container .lowerPart{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    
+}
+main .container .lowerPart p{
+    font-size: 15px;
+}
